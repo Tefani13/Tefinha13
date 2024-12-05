@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Your Email</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Tour Packages</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="search-form">
+        <h1>Discover the Beauty of Tuscany</h1>
+        <form>
+            <div class="form-group">
+                <label for="tour-type">Tour Type:</label>
+                <select id="tour-type" name="tour-type">
+                    <option value="public">Public Tours</option>
+                    <option value="private">Private Tours</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date">
+            </div>
+            <div class="form-group">
+                <label for="transport">Transportation:</label>
+                <select id="transport" name="transport">
+                    <option value="bus">Bus</option>
+                    <option value="car">Car</option>
+                    <option value="bike">Bike</option>
+                </select>
+            </div>
+            <button type="submit">Search Tours</button>
+        </form>
+    </section>
+
+    <div class="modal">
+        <img src="Logo2.png" alt="Logo">
+        <h2>Check your email</h2>
+        <p>We sent a password reset link to <strong>loremipsum@gmail.com</strong></p>
+        <button onclick="alert('Opening email app...')">Open email app</button>
+        <p><a href="#">Didn't receive the email? Click to resend</a></p>
+        <p><a href="#">Back to login</a></p>
+    </div>
+
+</body>
+</html>
